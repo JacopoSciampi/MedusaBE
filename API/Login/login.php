@@ -7,7 +7,6 @@
 
     if(isset($username) && $array['password']){
         require('../../function/const.php');
-        session_start();
         $res = [];
 
         $con = mysqli_connect($GLOBALS['DATABASE_HOST'], $GLOBALS['DATABASE_USER'], $GLOBALS['DATABASE_PASS'], $GLOBALS['DATABASE_NAME']);
